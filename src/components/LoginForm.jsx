@@ -25,6 +25,7 @@ const LoginForm = ({createLogin}) => {
       <div>
         username
         <input
+          data-testid="username"
           type="text"
           value={username}
           name="Username"
@@ -34,6 +35,7 @@ const LoginForm = ({createLogin}) => {
       <div>
         password
         <input
+          data-testid="password"
           type="password"
           value={password}
           name="Password"
@@ -45,7 +47,7 @@ const LoginForm = ({createLogin}) => {
   );
 };
 
-LoginForm.PropTypes = {
+LoginForm.propTypes = {
   createLogin: PropTypes.func.isRequired,
 };
 
